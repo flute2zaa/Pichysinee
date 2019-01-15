@@ -1,0 +1,23 @@
+<form>
+  String to Split:<br>
+  <input type="text" name="splitInput" id="splitInput" >
+  Tie : 
+  <input type="text" name="tieInput" id="tieInput">
+  <input type="submit" value="Submit">
+</form> 
+
+var inputString = 
+document.getElementById('splitInput').value;
+var inputTie = 
+document.getElementById('tieInput').value;
+
+function stringSplit(string,tie){
+ 
+  var splitString = inputString.split(inputTie);
+  var name = splitString[0]
+  return name;
+} // end function
+
+var printString = stringSplit(inputString);
+
+document.write(printString);
