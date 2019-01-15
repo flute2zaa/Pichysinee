@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the array values after the split.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+
+var str = ".1abc2.5efg3mno";
+//เอาค่าเฉพาะตัวเลขออกมา
+var regexStr= str.match(/[0-9]/g);
+//เก็บตัวเลขใน array
+var array = new Array(regexStr);
+var total = 0;
+for (var i = 0; i < array.length; i++)
+{
+    total= total+i
+
+}
+
+document.getElementById("demo").innerHTML = total;
+
+
+</script>
+
+</body>
+</html>
